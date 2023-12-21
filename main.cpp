@@ -9,6 +9,7 @@ int main()
     DigitalOut led(LED);
     BufferedSerial Serial(PA_2, PA_3);
     Serial.set_baud(115200);
+    Serial.set_format(8, BufferedSerial::None, 1);
 
     const char *texto = "Hola mundo\n";
 
